@@ -23,4 +23,22 @@ export class UserController {
       })
     }
   }
+
+  async auth(req: Request, res: Response) {
+    try {
+      const { username, password } = req.body
+      const userService = new UserService()
+      const token = await userService.auth({ password, username })
+
+      res.status(201).json({
+        token
+      })
+    } catch (err) {
+      console.log(err)
+      res.status(401)
+      res.json({
+        message: err.message
+      })
+    }
+  }
 }
