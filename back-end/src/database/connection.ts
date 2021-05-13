@@ -1,9 +1,10 @@
 import { Sequelize } from 'sequelize';
-import { config as dotenv } from 'dotenv'
-dotenv()
+import { config } from 'dotenv'
+config()
 
-const connection = new Sequelize('ile', process.env.DB_USER, process.env.DB_PASSWORD, {
-  host: process.env.DB_HOST,
+
+const connection = new Sequelize('ile', 'root', 'Theryston10', {
+  host: 'localhost',
   dialect: 'mysql'
 })
 
