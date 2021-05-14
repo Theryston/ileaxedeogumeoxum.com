@@ -24,6 +24,27 @@ export class UserController {
     }
   }
 
+  async read(req: Request, res: Response) {
+    try {
+      const userService = new UserService()
+
+      const users = await userService.read()
+      res.status(200).json({ users })
+    } catch (error) {
+      res.status(500).json({ message: error.message })
+    }
+  }
+
+  async delete(req: Request, res: Response) {
+    try {
+      const userService = new UserService()
+      await userService.destroy(req.params.username)
+      res.sendStatus(200)
+    } catch (error) {
+      res.status(500).json({ message: error.message })
+    }
+  }
+
   async auth(req: Request, res: Response) {
     try {
       const { username, password } = req.body

@@ -10,17 +10,27 @@ interface IUser {
   username: string;
   password: string;
   id ? : number;
+  created_at ? : Date;
+  updated_at ? : Date;
 }
 
 class UserService {
   constructor() {}
 
   async register({ username, password }: IUser) {
-    const userExists = await User.findOne({ where: { username } })
-    if (userExists) return userExists;
+    const userExists: any = await User.findOne({ where: { username } })
+    if (userExists) {
+      userExists.password = undefined
+      return userExists;
+    }
 
-    const user = await User.create({ username, password: bcrypt.hashSync(password, bcrypt.genSaltSync(10)) })
+    const user: any = await User.create({ username, password: bcrypt.hashSync(password, bcrypt.genSaltSync(10)) })
+    user.password = undefined
     return user;
+  }
+
+  async read() {
+    return await User.findAll({ attributes: ['username', 'id'] })
   }
 
   async destroy(username: string) {

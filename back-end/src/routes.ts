@@ -8,11 +8,13 @@ const userMiddlewarer = new UserMiddleware()
 const workController = new WorkController()
 
 router.post('/api/v1/user', userMiddlewarer.auth, userController.register)
+router.get('/api/v1/users', userMiddlewarer.auth, userController.read)
+router.delete('/api/v1/user/:username', userMiddlewarer.auth, userController.delete)
 router.post('/api/v1/user/auth', userController.auth)
 
 router.post('/api/v1/work', userMiddlewarer.auth, workController.create)
-router.get('/api/v1/work', userMiddlewarer.auth, workController.read)
-router.get('/api/v1/work/:id', userMiddlewarer.auth, workController.readById)
+router.get('/api/v1/works', workController.read)
+router.get('/api/v1/work/:id', workController.readById)
 router.put('/api/v1/work/:id', userMiddlewarer.auth, workController.update)
 router.delete('/api/v1/work/:id', userMiddlewarer.auth, workController.delete)
 
