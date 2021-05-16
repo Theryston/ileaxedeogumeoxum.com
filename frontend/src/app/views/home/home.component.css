@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .b-img {
+  height: 378px;
+  width: 100%;
+  object-fit: cover;
+  object-position: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.filter {
+  height: 378px;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 20px 20px;
+}
+
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'main-font';
+}
+
+section h1 {
+  font-family: 'main-font';
+  color: #000;
+  font-weight: 600;
+  font-size: 30pt;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+  line-height: 45px;
+}
+
+section p {
+  font-family: 'main-font';
+  color: #000;
+  font-weight: 500;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+section a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+section img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+section button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-device-width: 900px) {
+  .container .b-img {}
+
+  .filter {}
+}

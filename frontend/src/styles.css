@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #023859;
+  --secondary-color: #0455BF;
+  --tertiary-color: #027368;
+}
+
+@font-face {
+  font-family: 'main-font';
+  src: url('assets/fonts/poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'secondary-font';
+  src: url('assets/fonts/Helvetica-Neue-Interface/_H_HelveticaNeueInterface_0.ttf');
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'main-font';
+  background: #FAFAFB;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.main-button {
+  background: linear-gradient(95.92deg, var(--primary-color) -21.93%, var(--secondary-color) 112.22%), #AAAAAA;
+  width: 80%;
+  height: 50px;
+  font-family: 'main-font';
+  font-weight: 600;
+  color: #FAFAFB;
+  border: none;
+  outline: none;
+  border-radius: .2rem;
+}
+
+.main-button:hover {
+  background: var(--secondary-color);
+}

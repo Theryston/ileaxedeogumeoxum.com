@@ -1,0 +1,48 @@
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(95.92deg, var(--primary-color) -21.93%, var(--secondary-color) 112.22%), #AAAAAA;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FAFAFB;
+  font-family: 'secondary-font';
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.container div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  color: #FAFAFB;
+  font-family: 'secondary-font';
+  align-items: center;
+  font-size: 1rem;
+}
+
+.container div span {
+  margin: 10px;
+}
+
+.container div a {
+  color: #FAFAFB;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.change {
+  width: 50%;
+  height: 8px;
+  background: #fff;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-device-width: 900px) {}
