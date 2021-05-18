@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   color: #FAFAFB;
-  font-family: 'secondary-font';
+  font-family: 'main-font';
   font-size: 1rem;
   z-index: 1;
 }
@@ -21,7 +21,7 @@
   display: flex;
   padding: 10px;
   color: #FAFAFB;
-  font-family: 'secondary-font';
+  font-family: 'main-font';
   align-items: center;
   font-size: 1rem;
 }
