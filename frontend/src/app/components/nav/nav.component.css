@@ -1,0 +1,22 @@
+.container {
+    background: transparent;
+    position: relative;
+}
+
+.sidenav {
+    background: linear-gradient(95.92deg, var(--primary-color) -21.93%, var(--secondary-color) 112.22%), #AAAAAA;
+    width: 200px;
+    padding: 0px;
+  }
+  
+  .sidenav a {
+    color: #fff;
+  }
+  
+  .sidenav i {
+    margin-right: 5px;
+  }
+  
+  .content {
+    margin: 0px;
+  }
