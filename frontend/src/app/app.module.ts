@@ -12,13 +12,17 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
 import { MatListModule } from '@angular/material/list';
+import { ContatoComponent } from './views/contato/contato.component';
+import { AutorizacaoComponent } from './views/autorizacao/autorizacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    ContatoComponent,
+    AutorizacaoComponent
   ],
   imports: [
     BrowserModule,
