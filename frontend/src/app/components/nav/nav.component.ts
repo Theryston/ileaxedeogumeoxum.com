@@ -1,3 +1,4 @@
+import { NavService } from './../../services/nav.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private navService: NavService) { }
 
   ngOnInit(): void {
+  }
+
+  get isOpen(): boolean {
+    return this.navService.isOpen
   }
 
 }
