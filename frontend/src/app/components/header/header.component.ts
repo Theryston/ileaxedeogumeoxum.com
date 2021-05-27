@@ -21,4 +21,12 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  openNav(): void {
+    this.navService.change = true
+  }
+
+  closeNav(): void {
+    this.navService.change = false
+  }
+
 }

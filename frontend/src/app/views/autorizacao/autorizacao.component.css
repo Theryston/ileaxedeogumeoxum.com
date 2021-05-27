@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container .doc {
+    width: 70%;
+    border: 10px solid #333;
+
+}
+
+.container .doc img {
+    width: 100%;
+}
