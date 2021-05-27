@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container .section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .section .box {
+    width: 200px;
+    height: 300px;
+    background: var(--tertiary-color);
+    margin: 25px;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding: 20px;
+    font-family: 'main-font';
+    color: #FFF;
+}
+
+.container .section .box:hover {
+    background: linear-gradient(95.92deg, var(--primary-color) -21.93%, var(--secondary-color) 112.22%), #AAAAAA;
+}
+
+.container .section .box h1 {
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'main-font';
+}
+
+.container .section .box p {
+    line-height: 1rem;
+}
+
+.container .section .box .main-button {
+    margin: 0px;
+    margin-top:  30px;
+}
